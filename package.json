@@ -1,0 +1,18 @@
+{
+  "name": "hyper-convert-wsl-paths",
+  "version": "0.1.0",
+  "description": "Convert Windows paths to WSL paths",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Sam Tran <sam@samvtran.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.0.0"
+  },
+  "keywords": [
+    "hyper-plugin"
+  ]
+}
