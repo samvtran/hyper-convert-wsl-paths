@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2 - 0.1.3
+
+- Fixing an issue where a shortcut like `'C:\Users\sam\a link with spaces.lnk'` would not be treated as a link and would not resolve.
+
 ## 0.1.1
 
 - Updating npm metadata and adding placeholder AppVeyor script (though not building until they add WSL support)
