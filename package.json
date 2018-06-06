@@ -1,6 +1,6 @@
 {
   "name": "hyper-convert-wsl-paths",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Convert Windows paths to WSL paths",
   "main": "index.js",
   "scripts": {
