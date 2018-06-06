@@ -16,7 +16,7 @@ const convertToWindowsPath = (windowsPath) => exec(`wsl.exe wslpath -w "${window
 const scriptPath = escapeForWslpath(convertToWindowsPath(escapeForWslpath(path.join(__dirname, 'resolve-link.ps1'))));
 
 const resolveLink = (link) => {
-    const cmd = `powershell.exe ${scriptPath} -path "${link}"`
+    const cmd = `powershell.exe ${scriptPath} -path "'${link}'"`
     try {
         const result = exec(cmd).toString().replace(/\r|\n/g, '');
         if (result) {
