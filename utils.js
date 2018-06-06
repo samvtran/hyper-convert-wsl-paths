@@ -1,9 +1,9 @@
 const exec = require('child_process').execSync;
 const path = require('path');
 
-const isWindowsPath = (testPath) => !!testPath.match(/['"]?[a-zA-Z]:\\/);
+const isWindowsPath = (testPath) => /['"]?[a-zA-Z]:\\/.test(testPath);
 
-const isLink = (testPath) => testPath.endsWith('.lnk');
+const isLink = (testPath) => /\.lnk['"]?$/.test(testPath);
 
 const escapeForWslpath = (str) => str
     .replace(/\\/g, '\\\\\\\\')
